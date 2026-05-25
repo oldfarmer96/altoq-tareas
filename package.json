@@ -16,6 +16,7 @@
     "@astrojs/vercel": "^10.0.7",
     "@tailwindcss/vite": "^4.3.0",
     "astro": "^6.3.7",
+    "resend": "^6.12.3",
     "svelte": "^5.55.9",
     "tailwindcss": "^4.3.0",
     "typescript": "^6.0.3"
