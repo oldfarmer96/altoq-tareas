@@ -4,25 +4,55 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 ---
 
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "AltoQ.Tareas",
+    "description": "Servicio de tareas universitarias en Perú. Calidad garantizada, entrega a tiempo, plagio 0%.",
+    "url": "https://altoq-tareas.vercel.app",
+    "areaServed": "Perú",
+    "serviceType": "Asesoría académica universitaria",
+    "priceRange": "$$",
+    "openingHours": "Mo-Su 08:00-22:00"
+  }
+</script>
+
 <BaseLayout title="Haz tus tareas universitarias | AltoQ.Tareas">
   <Header />
 
   <main>
-    <section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8" style="background-color: var(--color-surface)">
+    <section
+      class="py-16 md:py-24 px-4 sm:px-6 lg:px-8"
+      style="background-color: var(--color-surface)"
+    >
       <div class="max-w-6xl mx-auto">
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium mb-6" style="background-color: var(--color-accent); color: var(--color-primary)">
-              <span class="w-2 h-2 rounded-full bg-current animate-pulse"></span>
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium mb-6"
+              style="background-color: var(--color-accent); color: var(--color-primary)"
+            >
+              <span class="w-2 h-2 rounded-full bg-current animate-pulse"
+              ></span>
               +500 estudiantes satisfechos
             </div>
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6" style="color: var(--color-primary)">
-              Hacemos tus<br/>
-              <span style="color: var(--color-accent)">tareas universitarias</span><br/>
+            <h1
+              class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6"
+              style="color: var(--color-primary)"
+            >
+              Hacemos tus<br />
+              <span style="color: var(--color-accent)"
+                >tareas universitarias</span
+              ><br />
               por ti
             </h1>
-            <p class="text-lg md:text-xl mb-8" style="color: var(--color-muted)">
-              Ensayos, ejercicios, presentaciones, tesis y más. Calidad garantizada, entrega a tiempo y plagio 0%.
+            <p
+              class="text-lg md:text-xl mb-8"
+              style="color: var(--color-muted)"
+            >
+              Ensayos, ejercicios, presentaciones, tesis y más. Calidad
+              garantizada, entrega a tiempo y plagio 0%.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
               <a href="/cotizar" class="btn-primary text-center">
@@ -34,11 +64,16 @@ import Footer from "../components/Footer.astro";
             </div>
           </div>
           <div class="relative">
-            <div class="aspect-square rounded-2xl overflow-hidden" style="background-color: var(--color-primary)">
+            <div
+              class="aspect-square rounded-2xl overflow-hidden"
+              style="background-color: var(--color-primary)"
+            >
               <div class="absolute inset-0 flex items-center justify-center">
                 <div class="text-center text-white p-8">
                   <div class="text-6xl mb-4">📚</div>
-                  <p class="text-xl font-semibold">Tu éxito académico<br/>es nuestra prioridad</p>
+                  <p class="text-xl font-semibold">
+                    Tu éxito académico<br />es nuestra prioridad
+                  </p>
                 </div>
               </div>
             </div>
@@ -47,156 +82,349 @@ import Footer from "../components/Footer.astro";
       </div>
     </section>
 
-    <section class="py-12 px-4 sm:px-6 lg:px-8" style="background-color: var(--color-white)">
+    <section
+      class="py-12 px-4 sm:px-6 lg:px-8"
+      style="background-color: var(--color-white)"
+    >
       <div class="max-w-6xl mx-auto">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div>
-            <div class="text-3xl md:text-4xl font-extrabold mb-2" style="color: var(--color-primary)">500+</div>
-            <div class="text-sm" style="color: var(--color-muted)">Estudiantes atendidos</div>
+            <div
+              class="text-3xl md:text-4xl font-extrabold mb-2"
+              style="color: var(--color-primary)"
+            >
+              500+
+            </div>
+            <div class="text-sm" style="color: var(--color-muted)">
+              Estudiantes atendidos
+            </div>
           </div>
           <div>
-            <div class="text-3xl md:text-4xl font-extrabold mb-2" style="color: var(--color-primary)">2000+</div>
-            <div class="text-sm" style="color: var(--color-muted)">Tareas entregadas</div>
+            <div
+              class="text-3xl md:text-4xl font-extrabold mb-2"
+              style="color: var(--color-primary)"
+            >
+              2000+
+            </div>
+            <div class="text-sm" style="color: var(--color-muted)">
+              Tareas entregadas
+            </div>
           </div>
           <div>
-            <div class="text-3xl md:text-4xl font-extrabold mb-2" style="color: var(--color-primary)">17.5</div>
-            <div class="text-sm" style="color: var(--color-muted)">Nota promedio</div>
+            <div
+              class="text-3xl md:text-4xl font-extrabold mb-2"
+              style="color: var(--color-primary)"
+            >
+              17.5
+            </div>
+            <div class="text-sm" style="color: var(--color-muted)">
+              Nota promedio
+            </div>
           </div>
           <div>
-            <div class="text-3xl md:text-4xl font-extrabold mb-2" style="color: var(--color-primary)">24h</div>
-            <div class="text-sm" style="color: var(--color-muted)">Tiempo de respuesta</div>
+            <div
+              class="text-3xl md:text-4xl font-extrabold mb-2"
+              style="color: var(--color-primary)"
+            >
+              24h
+            </div>
+            <div class="text-sm" style="color: var(--color-muted)">
+              Tiempo de respuesta
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8" style="background-color: var(--color-surface)">
+    <section
+      class="py-16 md:py-24 px-4 sm:px-6 lg:px-8"
+      style="background-color: var(--color-surface)"
+    >
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-12">
           <h2 class="section-title mb-4">¿Qué tipo de tarea necesitas?</h2>
-          <p class="section-subtitle max-w-2xl mx-auto">Cubrimos todas las materias y tipos de trabajo académico que tu universidad requiera.</p>
+          <p class="section-subtitle max-w-2xl mx-auto">
+            Cubrimos todas las materias y tipos de trabajo académico que tu
+            universidad requiera.
+          </p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div class="card">
             <div class="text-3xl mb-4">✍️</div>
-            <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">Ensayos y trabajos escritos</h3>
-            <p class="text-sm" style="color: var(--color-muted)">Ensayos, artículos, monografías y cualquier trabajo de escritura académica.</p>
+            <h3
+              class="text-lg font-bold mb-2"
+              style="color: var(--color-primary)"
+            >
+              Ensayos y trabajos escritos
+            </h3>
+            <p class="text-sm" style="color: var(--color-muted)">
+              Ensayos, artículos, monografías y cualquier trabajo de escritura
+              académica.
+            </p>
           </div>
           <div class="card">
             <div class="text-3xl mb-4">📐</div>
-            <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">Ejercicios y problemas</h3>
-            <p class="text-sm" style="color: var(--color-muted)">Matemáticas, física, química, estadística y más. Con desarrollo paso a paso.</p>
+            <h3
+              class="text-lg font-bold mb-2"
+              style="color: var(--color-primary)"
+            >
+              Ejercicios y problemas
+            </h3>
+            <p class="text-sm" style="color: var(--color-muted)">
+              Matemáticas, física, química, estadística y más. Con desarrollo
+              paso a paso.
+            </p>
           </div>
           <div class="card">
             <div class="text-3xl mb-4">📊</div>
-            <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">Presentaciones</h3>
-            <p class="text-sm" style="color: var(--color-muted)">PowerPoint, slides interactivos y presentaciones creativas para exposiciones.</p>
+            <h3
+              class="text-lg font-bold mb-2"
+              style="color: var(--color-primary)"
+            >
+              Presentaciones
+            </h3>
+            <p class="text-sm" style="color: var(--color-muted)">
+              PowerPoint, slides interactivos y presentaciones creativas para
+              exposiciones.
+            </p>
           </div>
           <div class="card">
             <div class="text-3xl mb-4">💻</div>
-            <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">Código y programación</h3>
-            <p class="text-sm" style="color: var(--color-muted)">Python, Java, C++, JavaScript y cualquier lenguaje que necesites.</p>
+            <h3
+              class="text-lg font-bold mb-2"
+              style="color: var(--color-primary)"
+            >
+              Código y programación
+            </h3>
+            <p class="text-sm" style="color: var(--color-muted)">
+              Python, Java, C++, JavaScript y cualquier lenguaje que necesites.
+            </p>
           </div>
           <div class="card">
             <div class="text-3xl mb-4">🎓</div>
-            <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">Tesis y proyectos de investigación</h3>
-            <p class="text-sm" style="color: var(--color-muted)">Tesis de pregrado y posgrado, proyectos de investigación.</p>
+            <h3
+              class="text-lg font-bold mb-2"
+              style="color: var(--color-primary)"
+            >
+              Tesis y proyectos de investigación
+            </h3>
+            <p class="text-sm" style="color: var(--color-muted)">
+              Tesis de pregrado y posgrado, proyectos de investigación.
+            </p>
           </div>
           <div class="card">
             <div class="text-3xl mb-4">🔬</div>
-            <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">Investigaciones</h3>
-            <p class="text-sm" style="color: var(--color-muted)">Investigaciones documentadas con fuentes académicas confiables y actualizadas.</p>
+            <h3
+              class="text-lg font-bold mb-2"
+              style="color: var(--color-primary)"
+            >
+              Investigaciones
+            </h3>
+            <p class="text-sm" style="color: var(--color-muted)">
+              Investigaciones documentadas con fuentes académicas confiables y
+              actualizadas.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8" style="background-color: var(--color-white)">
+    <section
+      class="py-16 md:py-24 px-4 sm:px-6 lg:px-8"
+      style="background-color: var(--color-white)"
+    >
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-12">
           <h2 class="section-title mb-4">¿Cómo funciona?</h2>
-          <p class="section-subtitle max-w-2xl mx-auto">Solo 4 pasos para recibir tu tarea terminada y lista para presentar.</p>
+          <p class="section-subtitle max-w-2xl mx-auto">
+            Solo 4 pasos para recibir tu tarea terminada y lista para presentar.
+          </p>
         </div>
 
         <div class="grid md:grid-cols-4 gap-8">
           <div class="text-center">
-            <div class="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl" style="background-color: var(--color-accent)">📋</div>
-            <div class="text-sm font-bold mb-2" style="color: var(--color-accent)">Paso 1</div>
-            <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">Envíanos tu tarea</h3>
-            <p class="text-sm" style="color: var(--color-muted)">Describe tu tarea y adjunta tus archivos de referencia.</p>
+            <div
+              class="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl"
+              style="background-color: var(--color-accent)"
+            >
+              📋
+            </div>
+            <div
+              class="text-sm font-bold mb-2"
+              style="color: var(--color-accent)"
+            >
+              Paso 1
+            </div>
+            <h3
+              class="text-lg font-bold mb-2"
+              style="color: var(--color-primary)"
+            >
+              Envíanos tu tarea
+            </h3>
+            <p class="text-sm" style="color: var(--color-muted)">
+              Describe tu tarea y adjunta tus archivos de referencia.
+            </p>
           </div>
           <div class="text-center">
-            <div class="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl" style="background-color: var(--color-accent)">💰</div>
-            <div class="text-sm font-bold mb-2" style="color: var(--color-accent)">Paso 2</div>
-            <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">Recibe tu cotización</h3>
-            <p class="text-sm" style="color: var(--color-muted)">Te cotizamos en menos de 2 horas. Sin compromiso.</p>
+            <div
+              class="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl"
+              style="background-color: var(--color-accent)"
+            >
+              💰
+            </div>
+            <div
+              class="text-sm font-bold mb-2"
+              style="color: var(--color-accent)"
+            >
+              Paso 2
+            </div>
+            <h3
+              class="text-lg font-bold mb-2"
+              style="color: var(--color-primary)"
+            >
+              Recibe tu cotización
+            </h3>
+            <p class="text-sm" style="color: var(--color-muted)">
+              Te cotizamos en menos de 2 horas. Sin compromiso.
+            </p>
           </div>
           <div class="text-center">
-            <div class="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl" style="background-color: var(--color-accent)">✅</div>
-            <div class="text-sm font-bold mb-2" style="color: var(--color-accent)">Paso 3</div>
-            <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">Confirma y paga</h3>
-            <p class="text-sm" style="color: var(--color-muted)">Transferencia, Yape o tarjeta. Pago seguro.</p>
+            <div
+              class="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl"
+              style="background-color: var(--color-accent)"
+            >
+              ✅
+            </div>
+            <div
+              class="text-sm font-bold mb-2"
+              style="color: var(--color-accent)"
+            >
+              Paso 3
+            </div>
+            <h3
+              class="text-lg font-bold mb-2"
+              style="color: var(--color-primary)"
+            >
+              Confirma y paga
+            </h3>
+            <p class="text-sm" style="color: var(--color-muted)">
+              Transferencia, Yape o tarjeta. Pago seguro.
+            </p>
           </div>
           <div class="text-center">
-            <div class="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl" style="background-color: var(--color-accent)">📧</div>
-            <div class="text-sm font-bold mb-2" style="color: var(--color-accent)">Paso 4</div>
-            <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">Recibe tu trabajo</h3>
-            <p class="text-sm" style="color: var(--color-muted)">En tu correo, antes del plazo acordado.</p>
+            <div
+              class="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl"
+              style="background-color: var(--color-accent)"
+            >
+              📧
+            </div>
+            <div
+              class="text-sm font-bold mb-2"
+              style="color: var(--color-accent)"
+            >
+              Paso 4
+            </div>
+            <h3
+              class="text-lg font-bold mb-2"
+              style="color: var(--color-primary)"
+            >
+              Recibe tu trabajo
+            </h3>
+            <p class="text-sm" style="color: var(--color-muted)">
+              En tu correo, antes del plazo acordado.
+            </p>
           </div>
         </div>
 
         <div class="text-center mt-12">
-          <a href="/cotizar" class="btn-primary">
-            Comenzar ahora →
-          </a>
+          <a href="/cotizar" class="btn-primary"> Comenzar ahora → </a>
         </div>
       </div>
     </section>
 
-    <section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8" style="background-color: var(--color-surface)">
+    <section
+      class="py-16 md:py-24 px-4 sm:px-6 lg:px-8"
+      style="background-color: var(--color-surface)"
+    >
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-12">
           <h2 class="section-title mb-4">Garantías que inspiran confianza</h2>
-          <p class="section-subtitle max-w-2xl mx-auto">Tu tranquilidad es nuestra prioridad. Respaldamos cada trabajo que entregamos.</p>
+          <p class="section-subtitle max-w-2xl mx-auto">
+            Tu tranquilidad es nuestra prioridad. Respaldamos cada trabajo que
+            entregamos.
+          </p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div class="card text-center">
             <div class="text-4xl mb-4">🔒</div>
-            <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">Confidencialidad total</h3>
-            <p class="text-sm" style="color: var(--color-muted)">Tus datos y trabajo están protegidos. No compartimos nada con terceros.</p>
+            <h3
+              class="text-lg font-bold mb-2"
+              style="color: var(--color-primary)"
+            >
+              Confidencialidad total
+            </h3>
+            <p class="text-sm" style="color: var(--color-muted)">
+              Tus datos y trabajo están protegidos. No compartimos nada con
+              terceros.
+            </p>
           </div>
           <div class="card text-center">
             <div class="text-4xl mb-4">✅</div>
-            <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">Plagio 0%</h3>
-            <p class="text-sm" style="color: var(--color-muted)">Todo trabajo es original y verificable. Te entregamos reporte de plagio.</p>
+            <h3
+              class="text-lg font-bold mb-2"
+              style="color: var(--color-primary)"
+            >
+              Plagio 0%
+            </h3>
+            <p class="text-sm" style="color: var(--color-muted)">
+              Todo trabajo es original y verificable. Te entregamos reporte de
+              plagio.
+            </p>
           </div>
           <div class="card text-center">
             <div class="text-4xl mb-4">⏰</div>
-            <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">Entrega a tiempo</h3>
-            <p class="text-sm" style="color: var(--color-muted)">Cumplimos siempre. Si no entregas a tiempo, te devolvemos tu dinero.</p>
+            <h3
+              class="text-lg font-bold mb-2"
+              style="color: var(--color-primary)"
+            >
+              Entrega a tiempo
+            </h3>
+            <p class="text-sm" style="color: var(--color-muted)">
+              Cumplimos siempre. Si no entregas a tiempo, te devolvemos tu
+              dinero.
+            </p>
           </div>
           <div class="card text-center">
             <div class="text-4xl mb-4">⭐</div>
-            <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">Satisfacción garantizada</h3>
-            <p class="text-sm" style="color: var(--color-muted)">Si necesitas ajustes, los hacemos sin costo adicional.</p>
+            <h3
+              class="text-lg font-bold mb-2"
+              style="color: var(--color-primary)"
+            >
+              Satisfacción garantizada
+            </h3>
+            <p class="text-sm" style="color: var(--color-muted)">
+              Si necesitas ajustes, los hacemos sin costo adicional.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8" style="background-color: var(--color-primary)">
+    <section
+      class="py-16 md:py-24 px-4 sm:px-6 lg:px-8"
+      style="background-color: var(--color-primary)"
+    >
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6">
           ¿Listo para dejar las tareas atrás?
         </h2>
         <p class="text-lg text-white/80 mb-8">
-          Envíanos tu solicitud ahora y recibe tu cotización en menos de 2 horas.
+          Envíanos tu solicitud ahora y recibe tu cotización en menos de 2
+          horas.
         </p>
-        <a href="/cotizar" class="btn-accent text-lg">
-          Cotizar mi tarea →
-        </a>
+        <a href="/cotizar" class="btn-accent text-lg"> Cotizar mi tarea → </a>
       </div>
     </section>
   </main>

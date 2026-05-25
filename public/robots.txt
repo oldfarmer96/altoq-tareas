@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://altoq-tareas.vercel.app/sitemap.xml
