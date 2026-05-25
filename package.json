@@ -16,9 +16,12 @@
     "@astrojs/vercel": "^10.0.7",
     "@tailwindcss/vite": "^4.3.0",
     "astro": "^6.3.7",
+    "nodemailer": "^8.0.8",
     "preact": "^10.29.2",
-    "resend": "^6.12.3",
     "tailwindcss": "^4.3.0",
     "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^8.0.0"
   }
 }

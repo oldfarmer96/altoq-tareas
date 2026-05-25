@@ -6,7 +6,7 @@
 - **Framework**: Astro 6 (SSG/SSR híbrido)
 - **UI Framework**: Preact
 - **Estilos**: TailwindCSS 4 con variables CSS
-- **Email**: Resend (SDK para envío de emails)
+- **Email**: Nodemailer + Gmail SMTP (App Password)
 - **Deploy**: Vercel (serverless functions)
 - **Gestor de paquetes**: **pnpm** (NO usar npm ni yarn)
 
@@ -39,7 +39,11 @@
 
 ### Variables de entorno necesarias (.env)
 ```
-RESEND_API_KEY=re_xxxxxxxxxxxxx
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_SECURE=false
+SMTP_USER=tuemail@gmail.com
+SMTP_PASS=xxxx xxxx xxxx xxxx
 BUSINESS_EMAIL=laindots999@gmail.com
 ```
 
