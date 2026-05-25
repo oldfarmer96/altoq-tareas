@@ -1,21 +1,35 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 ---
 
-<BaseLayout title="Servicios" description="Todos los tipos de tareas universitarias que hacemos por ti.">
-  <Header />
-
-  <main class="py-16 md:py-24 px-4 sm:px-6 lg:px-8" style="background-color: var(--color-surface)">
+<BaseLayout
+  title="Servicios"
+  description="Todos los tipos de tareas universitarias que hacemos por ti."
+>
+  <main
+    class="py-16 md:py-24 px-4 sm:px-6 lg:px-8"
+    style="background-color: var(--color-surface)"
+  >
     <div class="max-w-4xl mx-auto">
       <h1 class="section-title mb-8">Nuestros Servicios</h1>
 
       <div class="space-y-8">
         <div class="card">
-          <h2 class="text-xl font-bold mb-4" style="color: var(--color-primary)">✍️ Ensayos y Trabajos Escritos</h2>
-          <p class="mb-4" style="color: var(--color-muted)">Elaboramos ensayos académicos, artículos, monografías y cualquier trabajo de escritura que necesites. Todos incluyen bibliografía y referencias en formato APA, MLA o Vancouver.</p>
-          <ul class="list-disc list-inside text-sm space-y-1" style="color: var(--color-muted)">
+          <h2
+            class="text-xl font-bold mb-4"
+            style="color: var(--color-primary)"
+          >
+            ✍️ Ensayos y Trabajos Escritos
+          </h2>
+          <p class="mb-4" style="color: var(--color-muted)">
+            Elaboramos ensayos académicos, artículos, monografías y cualquier
+            trabajo de escritura que necesites. Todos incluyen bibliografía y
+            referencias en formato APA, MLA o Vancouver.
+          </p>
+          <ul
+            class="list-disc list-inside text-sm space-y-1"
+            style="color: var(--color-muted)"
+          >
             <li>Ensayos argumentativos y expositivos</li>
             <li>Monografías y tesis de pregrado</li>
             <li>Reportes de lectura y análisis</li>
@@ -24,9 +38,21 @@ import Footer from "../components/Footer.astro";
         </div>
 
         <div class="card">
-          <h2 class="text-xl font-bold mb-4" style="color: var(--color-primary)">📐 Ejercicios y Problemas</h2>
-          <p class="mb-4" style="color: var(--color-muted)">Resolvemos ejercicios de matemáticas, física, química, estadística y más. Incluimos desarrollo paso a paso para que puedas entender el procedimiento.</p>
-          <ul class="list-disc list-inside text-sm space-y-1" style="color: var(--color-muted)">
+          <h2
+            class="text-xl font-bold mb-4"
+            style="color: var(--color-primary)"
+          >
+            📐 Ejercicios y Problemas
+          </h2>
+          <p class="mb-4" style="color: var(--color-muted)">
+            Resolvemos ejercicios de matemáticas, física, química, estadística y
+            más. Incluimos desarrollo paso a paso para que puedas entender el
+            procedimiento.
+          </p>
+          <ul
+            class="list-disc list-inside text-sm space-y-1"
+            style="color: var(--color-muted)"
+          >
             <li>Cálculo I, II, III y multivariable</li>
             <li>Física general y mecánica</li>
             <li>Química general y orgánica</li>
@@ -35,9 +61,20 @@ import Footer from "../components/Footer.astro";
         </div>
 
         <div class="card">
-          <h2 class="text-xl font-bold mb-4" style="color: var(--color-primary)">💻 Código y Programación</h2>
-          <p class="mb-4" style="color: var(--color-muted)">Escribimos código en cualquier lenguaje con comentarios y documentación para que puedas presentar y entender tu trabajo.</p>
-          <ul class="list-disc list-inside text-sm space-y-1" style="color: var(--color-muted)">
+          <h2
+            class="text-xl font-bold mb-4"
+            style="color: var(--color-primary)"
+          >
+            💻 Código y Programación
+          </h2>
+          <p class="mb-4" style="color: var(--color-muted)">
+            Escribimos código en cualquier lenguaje con comentarios y
+            documentación para que puedas presentar y entender tu trabajo.
+          </p>
+          <ul
+            class="list-disc list-inside text-sm space-y-1"
+            style="color: var(--color-muted)"
+          >
             <li>Python, Java, C++, C#</li>
             <li>JavaScript, React, Node.js</li>
             <li>Bases de datos SQL y NoSQL</li>
@@ -51,6 +88,4 @@ import Footer from "../components/Footer.astro";
       </div>
     </div>
   </main>
-
-  <Footer />
 </BaseLayout>

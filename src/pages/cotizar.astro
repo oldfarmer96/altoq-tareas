@@ -1,7 +1,5 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 import ContactForm from "../components/ContactForm.tsx";
 ---
 
@@ -9,8 +7,6 @@ import ContactForm from "../components/ContactForm.tsx";
   title="Cotizar tarea"
   description="Solicita una cotización para tu tarea universitaria."
 >
-  <Header />
-
   <main
     class="py-16 md:py-24 px-4 sm:px-6 lg:px-8"
     style="background-color: var(--color-surface)"
@@ -28,6 +24,4 @@ import ContactForm from "../components/ContactForm.tsx";
       </div>
     </div>
   </main>
-
-  <Footer />
 </BaseLayout>
