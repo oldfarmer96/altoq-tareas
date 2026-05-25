@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout title="Cotizar tarea" description="Solicita una cotización para tu tarea universitaria.">
+  <Header />
+
+  <main class="py-16 md:py-24 px-4 sm:px-6 lg:px-8" style="background-color: var(--color-surface)">
+    <div class="max-w-2xl mx-auto">
+      <div class="text-center mb-8">
+        <h1 class="section-title mb-4">Cotiza tu tarea</h1>
+        <p class="section-subtitle">Completa el formulario y recibe tu cotización en menos de 2 horas.</p>
+      </div>
+
+      <div class="card text-center py-12">
+        <p style="color: var(--color-muted)">El formulario se cargará aquí en el Módulo 5.</p>
+        <p class="mt-2" style="color: var(--color-muted)">Por ahora puedes ver el resto de la página.</p>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
