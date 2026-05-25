@@ -4,7 +4,7 @@
 
 ### Stack Tecnológico
 - **Framework**: Astro 6 (SSG/SSR híbrido)
-- **UI Framework**: Svelte (última versión)
+- **UI Framework**: Preact
 - **Estilos**: TailwindCSS 4 con variables CSS
 - **Email**: Resend (SDK para envío de emails)
 - **Deploy**: Vercel (serverless functions)
