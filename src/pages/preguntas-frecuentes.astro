@@ -1,104 +1,169 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 ---
 
-<BaseLayout title="Preguntas frecuentes" description="Resuelve tus dudas sobre nuestro servicio de tareas universitarias.">
-  <Header />
-
-  <main class="py-16 md:py-24 px-4 sm:px-6 lg:px-8" style="background-color: var(--color-surface)">
+<BaseLayout
+  title="Preguntas frecuentes"
+  description="Resuelve tus dudas sobre nuestro servicio de tareas universitarias."
+>
+  <main
+    class="py-16 md:py-24 px-4 sm:px-6 lg:px-8"
+    style="background-color: var(--color-surface)"
+  >
     <div class="max-w-3xl mx-auto">
       <h1 class="section-title mb-8 text-center">Preguntas frecuentes</h1>
 
       <div class="space-y-4">
         <details class="card group">
-          <summary class="font-semibold cursor-pointer list-none flex justify-between items-center" style="color: var(--color-primary)">
+          <summary
+            class="font-semibold cursor-pointer list-none flex justify-between items-center"
+            style="color: var(--color-primary)"
+          >
             <span>¿Cómo funciona el servicio?</span>
-            <span class="transform transition-transform group-open:rotate-180">▼</span>
+            <span class="transform transition-transform group-open:rotate-180"
+              >▼</span
+            >
           </summary>
           <p class="mt-4 text-sm" style="color: var(--color-muted)">
-            Envías tu solicitud con los detalles de tu tarea a través de nuestro formulario. Nosotros te cotizamos en menos de 2 horas. Si aceptas, haces el pago y comenzamos a trabajar. Recibes tu tarea antes del plazo acordado.
+            Envías tu solicitud con los detalles de tu tarea a través de nuestro
+            formulario. Nosotros te cotizamos en menos de 2 horas. Si aceptas,
+            haces el pago y comenzamos a trabajar. Recibes tu tarea antes del
+            plazo acordado.
           </p>
         </details>
 
         <details class="card group">
-          <summary class="font-semibold cursor-pointer list-none flex justify-between items-center" style="color: var(--color-primary)">
+          <summary
+            class="font-semibold cursor-pointer list-none flex justify-between items-center"
+            style="color: var(--color-primary)"
+          >
             <span>¿Cómo puedo enviar mis archivos?</span>
-            <span class="transform transition-transform group-open:rotate-180">▼</span>
+            <span class="transform transition-transform group-open:rotate-180"
+              >▼</span
+            >
           </summary>
           <p class="mt-4 text-sm" style="color: var(--color-muted)">
-            Al completar el formulario, puedes pegar un enlace de Google Drive o OneDrive en el campo de archivos de referencia. Solo asegúrate que el enlace tenga permisos de lectura para que podamos acceder a ellos.
+            Al completar el formulario, puedes pegar un enlace de Google Drive o
+            OneDrive en el campo de archivos de referencia. Solo asegúrate que
+            el enlace tenga permisos de lectura para que podamos acceder a
+            ellos.
           </p>
         </details>
 
         <details class="card group">
-          <summary class="font-semibold cursor-pointer list-none flex justify-between items-center" style="color: var(--color-primary)">
+          <summary
+            class="font-semibold cursor-pointer list-none flex justify-between items-center"
+            style="color: var(--color-primary)"
+          >
             <span>¿Qué métodos de pago aceptan?</span>
-            <span class="transform transition-transform group-open:rotate-180">▼</span>
+            <span class="transform transition-transform group-open:rotate-180"
+              >▼</span
+            >
           </summary>
           <p class="mt-4 text-sm" style="color: var(--color-muted)">
-            Aceptamos transferencia bancaria (BCP, Interbank), Yape, Plin y tarjetas de crédito/débito. El pago se confirma antes de empezar el trabajo para mayor seguridad.
+            Aceptamos transferencia bancaria (BCP, Interbank), Yape, Plin y
+            tarjetas de crédito/débito. El pago se confirma antes de empezar el
+            trabajo para mayor seguridad.
           </p>
         </details>
 
         <details class="card group">
-          <summary class="font-semibold cursor-pointer list-none flex justify-between items-center" style="color: var(--color-primary)">
+          <summary
+            class="font-semibold cursor-pointer list-none flex justify-between items-center"
+            style="color: var(--color-primary)"
+          >
             <span>¿Cuánto tiempo tardan en entregar?</span>
-            <span class="transform transition-transform group-open:rotate-180">▼</span>
+            <span class="transform transition-transform group-open:rotate-180"
+              >▼</span
+            >
           </summary>
           <p class="mt-4 text-sm" style="color: var(--color-muted)">
-            El tiempo de entrega depende de la complejidad y extensión de la tarea. Te informamos el plazo exacto en la cotización. Generalmente entre 24 horas y 7 días. Tareas urgentes pueden entregarse en menos de 24 horas con costo adicional.
+            El tiempo de entrega depende de la complejidad y extensión de la
+            tarea. Te informamos el plazo exacto en la cotización. Generalmente
+            entre 24 horas y 7 días. Tareas urgentes pueden entregarse en menos
+            de 24 horas con costo adicional.
           </p>
         </details>
 
         <details class="card group">
-          <summary class="font-semibold cursor-pointer list-none flex justify-between items-center" style="color: var(--color-primary)">
+          <summary
+            class="font-semibold cursor-pointer list-none flex justify-between items-center"
+            style="color: var(--color-primary)"
+          >
             <span>¿Cómo sé que el trabajo es original?</span>
-            <span class="transform transition-transform group-open:rotate-180">▼</span>
+            <span class="transform transition-transform group-open:rotate-180"
+              >▼</span
+            >
           </summary>
           <p class="mt-4 text-sm" style="color: var(--color-muted)">
-            Entregamos un reporte de plagio con cada trabajo. Todo el contenido es escrito específicamente para ti y citamos todas las fuentes usadas en formato APA, MLA o Vancouver según necesites.
+            Entregamos un reporte de plagio con cada trabajo. Todo el contenido
+            es escrito específicamente para ti y citamos todas las fuentes
+            usadas en formato APA, MLA o Vancouver según necesites.
           </p>
         </details>
 
         <details class="card group">
-          <summary class="font-semibold cursor-pointer list-none flex justify-between items-center" style="color: var(--color-primary)">
+          <summary
+            class="font-semibold cursor-pointer list-none flex justify-between items-center"
+            style="color: var(--color-primary)"
+          >
             <span>¿Qué pasa si no me gusta el trabajo?</span>
-            <span class="transform transition-transform group-open:rotate-180">▼</span>
+            <span class="transform transition-transform group-open:rotate-180"
+              >▼</span
+            >
           </summary>
           <p class="mt-4 text-sm" style="color: var(--color-muted)">
-            Hacemos ajustes sin costo adicional hasta que estés satisfecho con el resultado. Si por alguna razón no podemos resolver tu solicitud, te devolvemos el dinero íntegro.
+            Hacemos ajustes sin costo adicional hasta que estés satisfecho con
+            el resultado. Si por alguna razón no podemos resolver tu solicitud,
+            te devolvemos el dinero íntegro.
           </p>
         </details>
 
         <details class="card group">
-          <summary class="font-semibold cursor-pointer list-none flex justify-between items-center" style="color: var(--color-primary)">
+          <summary
+            class="font-semibold cursor-pointer list-none flex justify-between items-center"
+            style="color: var(--color-primary)"
+          >
             <span>¿Mis datos están seguros?</span>
-            <span class="transform transition-transform group-open:rotate-180">▼</span>
+            <span class="transform transition-transform group-open:rotate-180"
+              >▼</span
+            >
           </summary>
           <p class="mt-4 text-sm" style="color: var(--color-muted)">
-            Sí. Tu información está protegida y nunca compartimos tus datos con terceros. Todo el proceso es 100% confidencial. Tus archivos y datos personales se eliminan después de 30 días de entregado el trabajo.
+            Sí. Tu información está protegida y nunca compartimos tus datos con
+            terceros. Todo el proceso es 100% confidencial. Tus archivos y datos
+            personales se eliminan después de 30 días de entregado el trabajo.
           </p>
         </details>
 
         <details class="card group">
-          <summary class="font-semibold cursor-pointer list-none flex justify-between items-center" style="color: var(--color-primary)">
+          <summary
+            class="font-semibold cursor-pointer list-none flex justify-between items-center"
+            style="color: var(--color-primary)"
+          >
             <span>¿Pueden hacer mi tesis completa?</span>
-            <span class="transform transition-transform group-open:rotate-180">▼</span>
+            <span class="transform transition-transform group-open:rotate-180"
+              >▼</span
+            >
           </summary>
           <p class="mt-4 text-sm" style="color: var(--color-muted)">
-            Sí, hacemos tesis de pregrado y posgrado. Incluye planteamiento del problema, marco teórico, metodología, resultados y bibliografía. El precio depende del nivel, extensión y complejidad. Contáctanos para una cotización exacta.
+            Sí, hacemos tesis de pregrado y posgrado. Incluye planteamiento del
+            problema, marco teórico, metodología, resultados y bibliografía. El
+            precio depende del nivel, extensión y complejidad. Contáctanos para
+            una cotización exacta.
           </p>
         </details>
       </div>
 
-      <div class="mt-12 text-center p-8 rounded-xl" style="background-color: var(--color-white)">
-        <p class="mb-4" style="color: var(--color-muted)">¿No encontraste lo que buscabas?</p>
+      <div
+        class="mt-12 text-center p-8 rounded-xl"
+        style="background-color: var(--color-white)"
+      >
+        <p class="mb-4" style="color: var(--color-muted)">
+          ¿No encontraste lo que buscabas?
+        </p>
         <a href="/cotizar" class="btn-primary">Escríbenos directamente →</a>
       </div>
     </div>
   </main>
-
-  <Footer />
 </BaseLayout>

@@ -1,0 +1,95 @@
+---
+import NotesSvg from "../assets/icons/notes.svg";
+import MoneySvg from "../assets/icons/money.svg";
+import CheckSvg from "../assets/icons/check.svg";
+import EmailSvg from "../assets/icons/email.svg";
+---
+
+<section
+  class="py-16 md:py-24 px-4 sm:px-6 lg:px-8"
+  style="background-color: var(--color-white)"
+>
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="section-title mb-4">¿Cómo funciona?</h2>
+      <p class="section-subtitle max-w-2xl mx-auto">
+        Solo 4 pasos para recibir tu tarea terminada y lista para presentar.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-8">
+      <div class="text-center">
+        <div
+          class="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl"
+          style="background-color: var(--color-accent)"
+        >
+          <NotesSvg height={30} width={30} />
+        </div>
+        <div class="text-sm font-bold mb-2" style="color: var(--color-accent)">
+          Paso 1
+        </div>
+        <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">
+          Envíanos tu tarea
+        </h3>
+        <p class="text-sm" style="color: var(--color-muted)">
+          Describe tu tarea y adjunta tus archivos de referencia.
+        </p>
+      </div>
+      <div class="text-center">
+        <div
+          class="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl"
+          style="background-color: var(--color-accent)"
+        >
+          <MoneySvg height={30} width={30} />
+        </div>
+        <div class="text-sm font-bold mb-2" style="color: var(--color-accent)">
+          Paso 2
+        </div>
+        <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">
+          Recibe tu cotización
+        </h3>
+        <p class="text-sm" style="color: var(--color-muted)">
+          Te cotizamos en menos de 2 horas. Sin compromiso.
+        </p>
+      </div>
+      <div class="text-center">
+        <div
+          class="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl"
+          style="background-color: var(--color-accent)"
+        >
+          <CheckSvg height={30} width={30} />
+        </div>
+        <div class="text-sm font-bold mb-2" style="color: var(--color-accent)">
+          Paso 3
+        </div>
+        <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">
+          Confirma y paga
+        </h3>
+        <p class="text-sm" style="color: var(--color-muted)">
+          Transferencia, Yape o tarjeta. Pago seguro.
+        </p>
+      </div>
+      <div class="text-center">
+        <div
+          class="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl"
+          style="background-color: var(--color-accent)"
+        >
+          <EmailSvg width={30} height={30} />
+        </div>
+        <div class="text-sm font-bold mb-2" style="color: var(--color-accent)">
+          Paso 4
+        </div>
+        <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">
+          Recibe tu trabajo
+        </h3>
+        <p class="text-sm" style="color: var(--color-muted)">
+          En tu correo, antes del plazo acordado.
+        </p>
+      </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="/cotizar" class="btn-primary"> Comenzar ahora → </a>
+    </div>
+  </div>
+</section>

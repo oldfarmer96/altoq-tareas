@@ -1,0 +1,71 @@
+---
+import CheckSvg from "../assets/icons/check.svg";
+import StarSvg from "../assets/icons/star.svg";
+import ClockSvg from "../assets/icons/clock.svg";
+import PadLockSvg from "../assets/icons/padlock.svg";
+---
+
+<section
+  class="py-16 md:py-24 px-4 sm:px-6 lg:px-8"
+  style="background-color: var(--color-surface)"
+>
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="section-title mb-4">Garantías que inspiran confianza</h2>
+      <p class="section-subtitle max-w-2xl mx-auto">
+        Tu tranquilidad es nuestra prioridad. Respaldamos cada trabajo que
+        entregamos.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="card text-center flex flex-col items-center">
+        <div class="text-4xl mb-4">
+          <PadLockSvg width={50} height={50} />
+        </div>
+        <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">
+          Confidencialidad total
+        </h3>
+        <p class="text-sm" style="color: var(--color-muted)">
+          Tus datos y trabajo están protegidos. No compartimos nada con
+          terceros.
+        </p>
+      </div>
+      <div class="card text-center flex flex-col items-center">
+        <div class="text-4xl mb-4">
+          <CheckSvg width={50} height={50} />
+        </div>
+        <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">
+          100% Original
+        </h3>
+        <p class="text-sm" style="color: var(--color-muted)">
+          Todos los trabajos que realizamos son originales, capaces de superar
+          controles de antiplagio.
+        </p>
+      </div>
+      <div class="card text-center flex flex-col items-center">
+        <div class="text-4xl mb-4">
+          <ClockSvg width={50} height={50} />
+        </div>
+        <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">
+          Entrega a tiempo
+        </h3>
+        <p class="text-sm" style="color: var(--color-muted)">
+          Garantizamos el cumplimiento de las tareas con los requisitos
+          facilitados y el tiempo acordado.
+        </p>
+      </div>
+      <div class="card text-center flex flex-col items-center">
+        <div class="text-4xl mb-4">
+          <StarSvg width={50} height={50} />
+        </div>
+        <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">
+          Satisfacción garantizada
+        </h3>
+        <p class="text-sm" style="color: var(--color-muted)">
+          Revisión y corrección gratuitas si no estás satisfecho con la tarea.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
