@@ -9,7 +9,7 @@ import Footer from "../components/Footer.astro";
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "AltoQ.Tareas",
-    "description": "Servicio de tareas universitarias en Perú. Calidad garantizada, entrega a tiempo, plagio 0%.",
+    "description": "Servicio de tareas universitarias en Perú. Calidad garantizada y entrega a tiempo.",
     "url": "https://altoq-tareas.vercel.app",
     "areaServed": "Perú",
     "serviceType": "Asesoría académica universitaria",
@@ -29,14 +29,6 @@ import Footer from "../components/Footer.astro";
       <div class="max-w-6xl mx-auto">
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <div
-              class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium mb-6"
-              style="background-color: var(--color-accent); color: var(--color-primary)"
-            >
-              <span class="w-2 h-2 rounded-full bg-current animate-pulse"
-              ></span>
-              +500 estudiantes satisfechos
-            </div>
             <h1
               class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6"
               style="color: var(--color-primary)"
@@ -52,7 +44,7 @@ import Footer from "../components/Footer.astro";
               style="color: var(--color-muted)"
             >
               Ensayos, ejercicios, presentaciones, tesis y más. Calidad
-              garantizada, entrega a tiempo y plagio 0%.
+              garantizada y entrega a tiempo.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
               <a href="/cotizar" class="btn-primary text-center">
@@ -66,23 +58,20 @@ import Footer from "../components/Footer.astro";
           <div class="relative">
             <div
               class="aspect-square rounded-2xl overflow-hidden"
-              style="background-color: var(--color-primary)"
+              style="background: var(--color-primary)"
             >
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div class="text-center text-white p-8">
-                  <div class="text-6xl mb-4">📚</div>
-                  <p class="text-xl font-semibold">
-                    Tu éxito académico<br />es nuestra prioridad
-                  </p>
-                </div>
-              </div>
+              <img
+                src="/research-paper-amico.webp"
+                alt="Estudiante trabajando en sus tareas"
+                class="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section
+    <!-- <section
       class="py-12 px-4 sm:px-6 lg:px-8"
       style="background-color: var(--color-white)"
     >
@@ -134,7 +123,7 @@ import Footer from "../components/Footer.astro";
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section
       class="py-16 md:py-24 px-4 sm:px-6 lg:px-8"
@@ -376,11 +365,11 @@ import Footer from "../components/Footer.astro";
               class="text-lg font-bold mb-2"
               style="color: var(--color-primary)"
             >
-              Plagio 0%
+              100% Original
             </h3>
             <p class="text-sm" style="color: var(--color-muted)">
-              Todo trabajo es original y verificable. Te entregamos reporte de
-              plagio.
+              Todos los trabajos que realizamos son originales, capaces de
+              superar controles de antiplagio.
             </p>
           </div>
           <div class="card text-center">
@@ -392,8 +381,8 @@ import Footer from "../components/Footer.astro";
               Entrega a tiempo
             </h3>
             <p class="text-sm" style="color: var(--color-muted)">
-              Cumplimos siempre. Si no entregas a tiempo, te devolvemos tu
-              dinero.
+              Garantizamos el cumplimiento de las tareas con los requisitos
+              facilitados y el tiempo acordado.
             </p>
           </div>
           <div class="card text-center">
@@ -405,7 +394,8 @@ import Footer from "../components/Footer.astro";
               Satisfacción garantizada
             </h3>
             <p class="text-sm" style="color: var(--color-muted)">
-              Si necesitas ajustes, los hacemos sin costo adicional.
+              Revisión y corrección gratuitas si no estás satisfecho con la
+              tarea.
             </p>
           </div>
         </div>
