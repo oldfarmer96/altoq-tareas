@@ -1,0 +1,73 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout title="Términos y condiciones" description="Condiciones de uso del servicio.">
+  <Header />
+
+  <main class="py-16 md:py-24 px-4 sm:px-6 lg:px-8" style="background-color: var(--color-surface)">
+    <div class="max-w-3xl mx-auto">
+      <h1 class="section-title mb-8">Términos y Condiciones</h1>
+
+      <div class="card space-y-6 text-sm" style="color: var(--color-muted)">
+        <p><strong style="color: var(--color-text)">Última actualización:</strong> Mayo 2025</p>
+
+        <h2 style="color: var(--color-primary)" class="text-lg font-bold">1. Servicio</h2>
+        <p>AltoQ.Tareas ofrece servicios de apoyo académico consistente en la elaboración de tareas universitarias según las especificaciones proporcionadas por el cliente. El servicio está diseñado como herramienta de apoyo para el aprendizaje y debe ser utilizado de manera ética.</p>
+
+        <h2 style="color: var(--color-primary)" class="text-lg font-bold">2. Garantías</h2>
+        <ul class="list-disc list-inside space-y-1">
+          <li><strong>Originalidad:</strong> Todo trabajo es original y libre de plagio. Entregamos reporte de plagio con cada trabajo.</li>
+          <li><strong>Entrega a tiempo:</strong> Cumplimos con los plazos acordados en la cotización. Si no entregamos a tiempo por causa nuestra, devolvemos el dinero.</li>
+          <li><strong>Confidencialidad:</strong> Tu información y trabajo están protegidos y nunca se comparten con terceros.</li>
+          <li><strong>Satisfacción:</strong> Hacemos ajustes sin costo adicional hasta que estés satisfecho con el resultado final.</li>
+        </ul>
+
+        <h2 style="color: var(--color-primary)" class="text-lg font-bold">3. Proceso de pago</h2>
+        <p>El pago se realiza después de aprobar la cotización. Aceptamos:</p>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Transferencia bancaria (BCP, Interbank)</li>
+          <li>Yape y Plin</li>
+          <li>Tarjetas de crédito y débito</li>
+        </ul>
+        <p>El trabajo comienza únicamente después de confirmado el pago. Los precios cotizados tienen validez de 7 días.</p>
+
+        <h2 style="color: var(--color-primary)" class="text-lg font-bold">4. Reembolsos</h2>
+        <p>Emitimos reembolso completo en los siguientes casos:</p>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Si no podemos completar el trabajo por razones imputables a nosotros</li>
+          <li>Si el trabajo no cumple con las especificaciones acordadas y no podemos corregirlo</li>
+          <li>Si el cliente cancela antes de que el trabajo haya comenzado</li>
+        </ul>
+        <p>No emitimos reembolso si el trabajo ya fue entregado y aceptado sin objeciones.</p>
+
+        <h2 style="color: var(--color-primary)" class="text-lg font-bold">5. Limitaciones</h2>
+        <p>El servicio está diseñado como apoyo académico. El cliente es responsable de usar el trabajo de manera ética y de acuerdo con las normas de su institución educativa. No nos responsabilizamos por el uso indebido que el cliente pueda dar al trabajo recibido.</p>
+
+        <h2 style="color: var(--color-primary)" class="text-lg font-bold">6. Confidencialidad</h2>
+        <p>Ambas partes (cliente y proveedor) se comprometen a mantener la confidencialidad del servicio. No revelamos la identidad de nuestros clientes ni los detalles de los trabajos realizados. Toda la información intercambiada se trata de manera confidencial.</p>
+
+        <h2 style="color: var(--color-primary)" class="text-lg font-bold">7. Propiedad intelectual</h2>
+        <p>Una vez realizado el pago, el trabajo realizado es propiedad del cliente. Nos reservamos el derecho de utilizar técnicas, metodologías generales y plantillas en trabajos futuros.</p>
+
+        <h2 style="color: var(--color-primary)" class="text-lg font-bold">8. Ley aplicable</h2>
+        <p>Estos términos se rigen por las leyes del Perú. Cualquier disputa será resuelta primero mediante negociación directa. Si no se llega a un acuerdo, se someterá a la jurisdicción de los tribunales de Lima, Perú.</p>
+
+        <h2 style="color: var(--color-primary)" class="text-lg font-bold">9. Contacto</h2>
+        <p>Para cualquier consulta sobre estos términos, contáctanos:</p>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Correo electrónico: laindots999@gmail.com</li>
+          <li>WhatsApp: +51 999 999 999</li>
+        </ul>
+      </div>
+
+      <div class="mt-8 text-center">
+        <a href="/" class="btn-primary">Volver al inicio</a>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>

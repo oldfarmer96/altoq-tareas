@@ -1,0 +1,69 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout title="Política de privacidad" description="Cómo protegemos tus datos personales.">
+  <Header />
+
+  <main class="py-16 md:py-24 px-4 sm:px-6 lg:px-8" style="background-color: var(--color-surface)">
+    <div class="max-w-3xl mx-auto">
+      <h1 class="section-title mb-8">Política de Privacidad</h1>
+
+      <div class="card space-y-6 text-sm" style="color: var(--color-muted)">
+        <p><strong style="color: var(--color-text)">Última actualización:</strong> Mayo 2025</p>
+
+        <h2 style="color: var(--color-primary)" class="text-lg font-bold">1. Información que recopilamos</h2>
+        <p>Recopilamos únicamente la información que tú nos proporcionas voluntariamente a través del formulario de contacto:</p>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Nombre</li>
+          <li>Correo electrónico</li>
+          <li>Número de WhatsApp (opcional)</li>
+          <li>Descripción de la tarea solicitada</li>
+          <li>Enlaces a archivos de referencia (Google Drive o OneDrive)</li>
+        </ul>
+        <p>No recopilamos información de navegación, cookies de terceros ni datos de redes sociales.</p>
+
+        <h2 style="color: var(--color-primary)" class="text-lg font-bold">2. Uso de la información</h2>
+        <p>Utilizamos tu información exclusivamente para:</p>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Procesar tu solicitud de cotización</li>
+          <li>Enviarte información sobre el servicio y seguimiento de tu pedido</li>
+          <li>Comunicarnos contigo por correo electrónico o WhatsApp</li>
+          <li>Mejorar nuestros servicios</li>
+        </ul>
+
+        <h2 style="color: var(--color-primary)" class="text-lg font-bold">3. Protección de datos</h2>
+        <p>No compartimos, vendemos ni transferimos tu información personal a terceros bajo ninguna circunstancia. Tu información es almacenada de forma segura y solo es accesible por nuestro equipo interno.</p>
+
+        <h2 style="color: var(--color-primary)" class="text-lg font-bold">4. Tus derechos</h2>
+        <p>Conforme a la Ley 29733 (Ley de Protección de Datos Personales del Perú), tienes derecho a:</p>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Acceder a tus datos personales que tenemos en nuestro sistema</li>
+          <li>Corregir cualquier dato incorrecto o incompleto</li>
+          <li>Solicitar la eliminación de tus datos de nuestros registros</li>
+          <li>Revocar el consentimiento para el uso de tus datos en cualquier momento</li>
+        </ul>
+
+        <h2 style="color: var(--color-primary)" class="text-lg font-bold">5. Retención de datos</h2>
+        <p>Conservamos tu información solo durante el tiempo necesario para prestar el servicio. Los datos de solicitudes completadas se eliminan después de 30 días. Los datos de solicitudes abortadas se eliminan inmediatamente.</p>
+        <p>Puedes solicitar la eliminación de tus datos en cualquier momento escribiéndonos a nuestro correo de contacto.</p>
+
+        <h2 style="color: var(--color-primary)" class="text-lg font-bold">6. Contacto</h2>
+        <p>Para cualquier consulta sobre el uso de tus datos, ejercicio de tus derechos o reporte de incidentes de seguridad, contáctanos a través de:</p>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Correo electrónico: laindots999@gmail.com</li>
+          <li>WhatsApp: +51 999 999 999</li>
+        </ul>
+        <p>Responderemos tu solicitud en un plazo máximo de 48 horas hábiles.</p>
+      </div>
+
+      <div class="mt-8 text-center">
+        <a href="/cotizar" class="btn-primary">Volver al inicio</a>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
