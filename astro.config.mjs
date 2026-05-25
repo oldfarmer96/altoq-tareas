@@ -7,12 +7,15 @@ import vercel from "@astrojs/vercel";
 
 import preact from "@astrojs/preact";
 
+import sitemap from "@astrojs/sitemap";
+
 // https://astro.build/config
 export default defineConfig({
+  site: "https://altoq-tareas.vercel.app",
   output: "server",
   vite: {
     plugins: [tailwindcss()],
   },
-  integrations: [preact()],
+  integrations: [preact(), sitemap()],
   adapter: vercel(),
 });
