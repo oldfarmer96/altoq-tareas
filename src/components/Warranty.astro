@@ -1,3 +1,10 @@
+---
+import CheckSvg from "../assets/icons/check.svg";
+import StarSvg from "../assets/icons/star.svg";
+import ClockSvg from "../assets/icons/clock.svg";
+import PadLockSvg from "../assets/icons/padlock.svg";
+---
+
 <section
   class="py-16 md:py-24 px-4 sm:px-6 lg:px-8"
   style="background-color: var(--color-surface)"
@@ -12,8 +19,10 @@
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="card text-center">
-        <div class="text-4xl mb-4">🔒</div>
+      <div class="card text-center flex flex-col items-center">
+        <div class="text-4xl mb-4">
+          <PadLockSvg width={50} height={50} />
+        </div>
         <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">
           Confidencialidad total
         </h3>
@@ -22,8 +31,10 @@
           terceros.
         </p>
       </div>
-      <div class="card text-center">
-        <div class="text-4xl mb-4">✅</div>
+      <div class="card text-center flex flex-col items-center">
+        <div class="text-4xl mb-4">
+          <CheckSvg width={50} height={50} />
+        </div>
         <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">
           100% Original
         </h3>
@@ -32,8 +43,10 @@
           controles de antiplagio.
         </p>
       </div>
-      <div class="card text-center">
-        <div class="text-4xl mb-4">⏰</div>
+      <div class="card text-center flex flex-col items-center">
+        <div class="text-4xl mb-4">
+          <ClockSvg width={50} height={50} />
+        </div>
         <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">
           Entrega a tiempo
         </h3>
@@ -42,8 +55,10 @@
           facilitados y el tiempo acordado.
         </p>
       </div>
-      <div class="card text-center">
-        <div class="text-4xl mb-4">⭐</div>
+      <div class="card text-center flex flex-col items-center">
+        <div class="text-4xl mb-4">
+          <StarSvg width={50} height={50} />
+        </div>
         <h3 class="text-lg font-bold mb-2" style="color: var(--color-primary)">
           Satisfacción garantizada
         </h3>

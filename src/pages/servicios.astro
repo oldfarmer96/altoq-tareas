@@ -1,5 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import WritingSvg from "../assets/icons/writing.svg";
+import RulerSvg from "../assets/icons/ruler.svg";
+import Laptop from "../assets/icons/laptop.svg";
 ---
 
 <BaseLayout
@@ -16,10 +19,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <div class="space-y-8">
         <div class="card">
           <h2
-            class="text-xl font-bold mb-4"
+            class="text-xl font-bold mb-4 flex items-center gap-2"
             style="color: var(--color-primary)"
           >
-            ✍️ Ensayos y Trabajos Escritos
+            <WritingSvg width={30} height={30} />
+            Ensayos y Trabajos Escritos
           </h2>
           <p class="mb-4" style="color: var(--color-muted)">
             Elaboramos ensayos académicos, artículos, monografías y cualquier
@@ -39,10 +43,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
         <div class="card">
           <h2
-            class="text-xl font-bold mb-4"
+            class="text-xl font-bold mb-4 flex items-center gap-2"
             style="color: var(--color-primary)"
           >
-            📐 Ejercicios y Problemas
+            <RulerSvg width={30} height={30} />
+            Ejercicios y Problemas
           </h2>
           <p class="mb-4" style="color: var(--color-muted)">
             Resolvemos ejercicios de matemáticas, física, química, estadística y
@@ -62,10 +67,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
         <div class="card">
           <h2
-            class="text-xl font-bold mb-4"
+            class="text-xl font-bold mb-4 flex items-center gap-2"
             style="color: var(--color-primary)"
           >
-            💻 Código y Programación
+            <Laptop width={30} height={30} />
+            Código y Programación
           </h2>
           <p class="mb-4" style="color: var(--color-muted)">
             Escribimos código en cualquier lenguaje con comentarios y
