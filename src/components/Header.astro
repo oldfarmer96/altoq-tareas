@@ -1,0 +1,54 @@
+---
+const navItems = [
+  { label: "Servicios", href: "/servicios" },
+  { label: "Cómo funciona", href: "/como-funciona" },
+  { label: "Cotizar", href: "/cotizar" },
+  { label: "Preguntas", href: "/preguntas-frecuentes" },
+];
+---
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <a href="/" class="flex items-center gap-2">
+        <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background-color: var(--color-primary)">
+          <span class="text-white font-bold text-lg">AQ</span>
+        </div>
+        <span class="font-bold text-xl" style="color: var(--color-primary)">AltoQ<span style="color: var(--color-accent)">.Tareas</span></span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-8">
+        {navItems.map(item => (
+          <a href={item.href} class="text-sm font-medium hover:opacity-80" style="color: var(--color-text)">
+            {item.label}
+          </a>
+        ))}
+      </div>
+
+      <a href="/cotizar" class="btn-accent text-sm font-semibold hidden sm:inline-block">
+        Cotizar ahora
+      </a>
+
+      <button id="mobile-menu-btn" class="md:hidden p-2" aria-label="Menú">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden pb-4">
+      {navItems.map(item => (
+        <a href={item.href} class="block py-2 text-sm font-medium" style="color: var(--color-text)">
+          {item.label}
+        </a>
+      ))}
+      <a href="/cotizar" class="btn-accent text-sm font-semibold inline-block mt-2">Cotizar ahora</a>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn?.addEventListener('click', () => menu?.classList.toggle('hidden'));
+</script>
