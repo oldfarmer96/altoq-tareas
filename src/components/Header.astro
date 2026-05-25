@@ -76,7 +76,12 @@ const navItems = [
 </header>
 
 <script>
-  const btn = document.getElementById("mobile-menu-btn");
-  const menu = document.getElementById("mobile-menu");
-  btn?.addEventListener("click", () => menu?.classList.toggle("hidden"));
+  function setupMobileMenu() {
+    const btn = document.getElementById("mobile-menu-btn");
+    const menu = document.getElementById("mobile-menu");
+    btn?.addEventListener("click", () => menu?.classList.toggle("hidden"));
+  }
+
+  setupMobileMenu();
+  document.addEventListener("astro:page-load", setupMobileMenu);
 </script>
