@@ -11,7 +11,11 @@ const navItems = [
   <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
       <a href="/" class="flex items-center gap-2">
-        <img src="/logo.webp" alt="AltoQ.Tareas" class="w-10 h-10 rounded-lg object-contain" />
+        <img
+          src="/logo.webp"
+          alt="AltoQ.Tareas"
+          class="w-10 h-10 rounded-lg object-contain"
+        />
         <span class="font-bold text-xl" style="color: var(--color-primary)"
           >AltoQ<span style="color: var(--color-accent)">.Tareas</span></span
         >
@@ -79,7 +83,15 @@ const navItems = [
   function setupMobileMenu() {
     const btn = document.getElementById("mobile-menu-btn");
     const menu = document.getElementById("mobile-menu");
-    btn?.addEventListener("click", () => menu?.classList.toggle("hidden"));
+
+    if (!btn || !menu) return;
+    if (btn.dataset.bound === "true") return;
+
+    btn.dataset.bound = "true";
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
   }
 
   setupMobileMenu();
