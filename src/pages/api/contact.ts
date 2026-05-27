@@ -13,6 +13,8 @@ export const POST: APIRoute = async ({ request }) => {
       linkArchivos,
       fechaEntrega,
       extension,
+      extensionCustom,
+      esUrgente,
       nombre,
       email,
       whatsapp,
@@ -37,6 +39,8 @@ export const POST: APIRoute = async ({ request }) => {
       linkArchivos: tieneArchivos !== "no" ? linkArchivos : undefined,
       fechaEntrega,
       extension,
+      extensionCustom: extension === "Otro" ? extensionCustom : undefined,
+      esUrgente,
     });
 
     await sendEmail({
@@ -50,6 +54,7 @@ export const POST: APIRoute = async ({ request }) => {
       tipo,
       materia,
       fechaEntrega,
+      esUrgente,
     });
 
     await sendEmail({
