@@ -8,6 +8,8 @@ interface FormData {
   linkArchivos: string;
   fechaEntrega: string;
   extension: string;
+  extensionCustom: string;
+  esUrgente: boolean;
   nombre: string;
   email: string;
   whatsapp: string;
@@ -17,6 +19,8 @@ interface FormData {
 
 const tiposTrabajo = [
   "Ensayo",
+  "Informe",
+  "Trabajo monográfico",
   "Tesis",
   "Ejercicios",
   "Presentación",
@@ -30,6 +34,7 @@ const extensiones = [
   "5-15 páginas",
   "15-30 páginas",
   "Más de 30 páginas",
+  "Otro",
 ];
 
 export default function ContactForm() {
@@ -45,6 +50,8 @@ export default function ContactForm() {
     linkArchivos: "",
     fechaEntrega: "",
     extension: "",
+    extensionCustom: "",
+    esUrgente: false,
     nombre: "",
     email: "",
     whatsapp: "",
@@ -70,7 +77,16 @@ export default function ContactForm() {
     if (formData.tieneArchivos !== "no" && !formData.linkArchivos) {
       return false;
     }
-    if (!formData.fechaEntrega || !formData.extension) {
+    if (!formData.extension) {
+      return false;
+    }
+    if (formData.extension === "Otro" && !formData.extensionCustom.trim()) {
+      return false;
+    }
+    if (formData.esUrgente) {
+      return true;
+    }
+    if (!formData.fechaEntrega) {
       return false;
     }
     const fechaMinima = new Date();
@@ -349,27 +365,80 @@ export default function ContactForm() {
             </div>
           )}
 
+          <div
+            class="p-4 rounded-lg border-2 cursor-pointer transition-all"
+            style={{
+              borderColor: formData.esUrgente ? "var(--color-accent)" : "var(--color-muted)",
+              backgroundColor: formData.esUrgente ? "#FEF3C7" : "transparent",
+            }}
+            onClick={() => {
+              const newUrgente = !formData.esUrgente;
+              updateFormData("esUrgente", newUrgente);
+              if (newUrgente) {
+                const hoy = new Date().toISOString().split("T")[0];
+                updateFormData("fechaEntrega", hoy);
+              } else {
+                updateFormData("fechaEntrega", "");
+              }
+            }}
+          >
+            <div class="flex items-start gap-3">
+              <div
+                class="w-5 h-5 rounded flex items-center justify-center mt-0.5"
+                style={{
+                  backgroundColor: formData.esUrgente ? "var(--color-accent)" : "transparent",
+                  border: formData.esUrgente ? "none" : "2px solid var(--color-muted)",
+                }}
+              >
+                {formData.esUrgente && (
+                  <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="var(--color-primary)" stroke-width="3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                )}
+              </div>
+              <div>
+                <p class="text-sm font-semibold" style={{ color: formData.esUrgente ? "var(--color-primary)" : "var(--color-text)" }}>
+                  Es una tarea urgente (de un día para otro)
+                </p>
+                <p class="text-xs mt-1" style={{ color: "var(--color-muted)" }}>
+                  Marca esta opción si necesitas la tarea en máximo 24 horas
+                </p>
+                {formData.esUrgente && (
+                  <p class="text-xs mt-2 font-medium" style={{ color: "var(--color-accent)" }}>
+                    Tu tarea será entregada en menos de 24 horas
+                  </p>
+                )}
+              </div>
+            </div>
+          </div>
+
           <div>
             <label
               for="fechaEntrega"
               class="block text-sm font-semibold mb-2"
               style={{ color: "var(--color-text)" }}
             >
-              Fecha de entrega *
+              Fecha de entrega {!formData.esUrgente && "*"}
             </label>
             <input
               id="fechaEntrega"
               type="date"
               value={formData.fechaEntrega}
-              onChange={(e) => {
-                const minDate = new Date();
-                minDate.setDate(minDate.getDate() + 1);
-                updateFormData("fechaEntrega", (e.target as HTMLInputElement).value);
-              }}
-              min={new Date(Date.now() + 86400000).toISOString().split("T")[0]}
+              onChange={(e) => updateFormData("fechaEntrega", (e.target as HTMLInputElement).value)}
+              min={formData.esUrgente ? new Date().toISOString().split("T")[0] : new Date(Date.now() + 86400000).toISOString().split("T")[0]}
+              disabled={formData.esUrgente}
               class="w-full px-4 py-3 rounded-lg border text-sm"
-              style={inputStyle}
+              style={{
+                ...inputStyle,
+                opacity: formData.esUrgente ? 0.5 : 1,
+                cursor: formData.esUrgente ? "not-allowed" : "text",
+              }}
             />
+            {formData.esUrgente && (
+              <p class="text-xs mt-1" style={{ color: "var(--color-accent)" }}>
+                La entrega se define como "hoy" al confirmar la solicitud
+              </p>
+            )}
           </div>
 
           <div>
@@ -392,13 +461,33 @@ export default function ContactForm() {
                     name="extension"
                     value={ext}
                     checked={formData.extension === ext}
-                    onChange={() => updateFormData("extension", ext)}
+                    onChange={() => {
+                      updateFormData("extension", ext);
+                      if (ext !== "Otro") {
+                        updateFormData("extensionCustom", "");
+                      }
+                    }}
                     class="sr-only"
                   />
                   {ext}
                 </label>
               ))}
             </div>
+            {formData.extension === "Otro" && (
+              <div class="mt-3">
+                <input
+                  type="text"
+                  value={formData.extensionCustom}
+                  onInput={(e) => updateFormData("extensionCustom", (e.target as HTMLInputElement).value)}
+                  placeholder="Ej: 2 páginas exactas, 50 hojas, 20 diapositivas"
+                  class="w-full px-4 py-3 rounded-lg border text-sm"
+                  style={inputStyle}
+                />
+                <p class="text-xs mt-1" style={{ color: "var(--color-muted)" }}>
+                  Especifica la cantidad exacta que necesitas
+                </p>
+              </div>
+            )}
           </div>
 
           <div class="flex gap-3">
